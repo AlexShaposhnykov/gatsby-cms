@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ui_descriptions",
+  "info": {
+    "name": "description",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "desc": {
+      "type": "richtext"
+    },
+    "componentName": {
+      "type": "string",
+      "required": true,
+      "default": "description"
+    }
+  }
+}

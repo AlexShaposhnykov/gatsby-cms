@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ui_titles",
+  "info": {
+    "name": "title",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "componentName": {
+      "type": "string",
+      "required": true,
+      "default": "title"
+    }
+  }
+}

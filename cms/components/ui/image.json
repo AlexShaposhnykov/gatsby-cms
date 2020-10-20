@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_ui_images",
+  "info": {
+    "name": "Image",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "componentName": {
+      "type": "string",
+      "required": true,
+      "default": "image"
+    }
+  }
+}
