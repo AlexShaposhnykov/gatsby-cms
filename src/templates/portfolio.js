@@ -10,7 +10,7 @@ export const query = graphql`
           componentName
           title
           image {
-            relativePath
+            url
           }
           id
           desc
@@ -24,9 +24,9 @@ export const query = graphql`
 const componentFactoryFnsByType = {
   title: ({ title }) => <h3>TITLE COMPONENT: {title}</h3>,
   description: ({ desc }) => <p>DESC COMPONENT: {desc}</p>,
-  image: ({ image: { relativePath } }) => (
+  image: ({ image: { url } }) => (
     <div>
-      IMAGE COMPONENT: <img alt="IMAGE" src={relativePath} />
+      IMAGE COMPONENT: <img alt="IMAGE" src={url} />
     </div>
   ),
 }
