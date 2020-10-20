@@ -17,7 +17,7 @@
     "gatsby": "^2.24.79",
     "gatsby-source-contentful": "^2.3.55",
     "gatsby-source-strapi": "0.0.12",
-    "graphql": "git://github.com/graphql/graphql-js.git#npm",
+    "graphql": "^15.3.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
