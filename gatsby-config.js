@@ -10,6 +10,15 @@ require('dotenv').config({
 
 module.exports = {
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/img`,
+      },
+    },
     {
       resolve: `gatsby-source-strapi`,
       options: {

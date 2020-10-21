@@ -2,6 +2,8 @@ import React from "react"
 
 import { graphql } from "gatsby"
 
+import Image from "gatsby-image";
+
 export const query = graphql`
   query GetPortfolioBySlug($slug: String) {
     portfolios: allStrapiPortfolios(filter: { slug: { eq: $slug } }) {
@@ -9,10 +11,14 @@ export const query = graphql`
         portfolio {
           componentName
           title
-          image {
-            absolutePath
-          }
           id
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           desc
         }
         slug
@@ -24,9 +30,9 @@ export const query = graphql`
 const componentFactoryFnsByType = {
   title: ({ title }) => <h3>TITLE COMPONENT: {title}</h3>,
   description: ({ desc }) => <p>DESC COMPONENT: {desc}</p>,
-  image: ({ image: { url } }) => (
+  image: ({ image: { childImageSharp: { fluid } } }) => (
     <div>
-      IMAGE COMPONENT: <img alt="IMAGE" src={url} />
+      IMAGE COMPONENT: <Image alt="IMAGE" fluid={fluid} />
     </div>
   ),
 }
