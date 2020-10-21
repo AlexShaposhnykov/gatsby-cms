@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: "https://aqueous-dusk-70101.herokuapp.com",
+        apiURL: "https://strapi-api-test55.herokuapp.com",
         queryLimit: 1000,
         contentTypes: [`portfolios`],
         singleTypes: [],
