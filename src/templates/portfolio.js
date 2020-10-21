@@ -10,7 +10,7 @@ export const query = graphql`
           componentName
           title
           image {
-            url
+            absolutePath
           }
           id
           desc
