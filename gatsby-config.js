@@ -21,5 +21,14 @@ module.exports = {
         singleTypes: [],
       },
     },
+    {
+      resolve: 'gatsby-transformer-cloudinary',
+      options: {
+        cloud_name: "hlalkroe5",
+        api_key: 727173249846427,
+        api_secret: "xeI1nxVgd0T0YxkVt4DHWW9QSi0",
+        uploadFolder: 'gatsby-cloudinary',
+      },
+    },
   ],
 }
